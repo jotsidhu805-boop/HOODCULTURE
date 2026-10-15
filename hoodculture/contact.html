@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | HoodCulture</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">HOOD<span>CULTURE</span></a>
+                  <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="track-order.html">Track Order</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="track-order.html">Track Order</a>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>CONTACT US</h1>
+      <p>Got questions? We’re here for the culture.</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>GET IN TOUCH</h2>
+          <p>Whether it’s about an order, a collab, or just to say what’s good — drop us a message.</p>
+          
+          <div class="info-item">
+            <h4>Email</h4>
+            <p>hello@hoodculture.in</p>
+          </div>
+          <div class="info-item">
+            <h4>Instagram</h4>
+            <p>@hoodculture</p>
+          </div>
+          <div class="info-item">
+            <h4>Based In</h4>
+            <p>Ludhiana, Punjab, India</p>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent! We’ll get back to you soon.'); this.reset();">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" required placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" required placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" required placeholder="What’s this about?" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" required placeholder="Tell us what’s on your mind..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">HOOD<span>CULTURE</span></a>
+        <p>Streetwear for the culture. Built different.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="https://mydukaan.io/hoodculture">All Products</a>
+        <a href="https://mydukaan.io/hoodculture">Hoodies</a>
+        <a href="https://mydukaan.io/hoodculture">T-Shirts</a>
+        <a href="https://mydukaan.io/hoodculture">Accessories</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="track-order.html">Track Order</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+      </div>
+      <div class="footer-links">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Twitter / X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 HoodCulture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <a href="https://mydukaan.io/hoodculture" class="btn btn-primary" style="width:100%; text-align:center; display:block;" target="_blank">Buy on Store</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

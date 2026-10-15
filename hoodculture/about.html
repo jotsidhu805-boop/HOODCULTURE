@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | HoodCulture</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">HOOD<span>CULTURE</span></a>
+                  <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="track-order.html">Track Order</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="track-order.html">Track Order</a>
+  </div>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>OUR STORY</h1>
+      <p>Born from the streets. Built for the culture.</p>
+    </div>
+  </section>
+
+  <section class="about-content">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>WHO WE ARE</h2>
+          <p>HoodCulture started with a simple idea — real streetwear for real people. No overpriced hype, no fake culture. Just quality pieces that actually represent the streets.</p>
+          <p>We design limited drops with attention to detail, fit, and feel. Every hoodie, tee, and cap is made to be worn hard and still look fresh.</p>
+          <p>This isn’t just clothing. It’s a mindset. Wear the culture.</p>
+        </div>
+        <div class="about-image">
+          <div class="about-img-placeholder"></div>
+        </div>
+      </div>
+
+      <div class="values">
+        <div class="value-card">
+          <h3>QUALITY FIRST</h3>
+          <p>Heavyweight fabrics, solid prints, and fits that actually work. We don’t cut corners.</p>
+        </div>
+        <div class="value-card">
+          <h3>LIMITED DROPS</h3>
+          <p>We drop small batches. Once it’s gone, it’s gone. No endless restocks.</p>
+        </div>
+        <div class="value-card">
+          <h3>CULTURE DRIVEN</h3>
+          <p>Designed by people who live it. Not by trend reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">HOOD<span>CULTURE</span></a>
+        <p>Streetwear for the culture. Built different.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Shop</h4>
+        <a href="https://mydukaan.io/hoodculture">All Products</a>
+        <a href="https://mydukaan.io/hoodculture">Hoodies</a>
+        <a href="https://mydukaan.io/hoodculture">T-Shirts</a>
+        <a href="https://mydukaan.io/hoodculture">Accessories</a>
+      </div>
+      <div class="footer-links">
+        <h4>Info</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    <a href="track-order.html">Track Order</a>
+        <a href="track-order.html">Track Order</a>
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+      </div>
+      <div class="footer-links">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Twitter / X</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 HoodCulture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Your cart is empty</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+      <a href="https://mydukaan.io/hoodculture" class="btn btn-primary" style="width:100%; text-align:center; display:block;" target="_blank">Buy on Store</a>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
